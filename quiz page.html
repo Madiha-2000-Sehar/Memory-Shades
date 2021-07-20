@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Quiz</title>
+<style type="text/css">
+			body{
+				background-color: #4d0026;
+				color:white;
+			}
+			h3{
+				font-weight:normal;
+			}
+			.border{
+				border:white solid 1px;
+				margin:0;
+			}
+</style>
+</head>
+<body>
+<h1 align="center">Quiz!</h1>
+<p class="border"></p>
+<h3>1. What type of machine learning algorithm makes predictions when you have a set of input data and you know the possible responses?</h3>
+<input type="radio" id="a1">
+<label for="a1">Supervised Learning</label>
+<input type="radio" id="b1">
+<label for="b1">UnSupervised Learning</label>
+<input type="radio" id="c1">
+<label for="c1">Deep Learning</label>
+<input type="radio" id="d1">
+<label for="d1">None</label>
+<h3>2.What category of machine learning algorithm finds patterns in the data when the data is not labeled?</h3>
+<input type="radio" id="a2">
+<label for="a2">Data prophecy</label>
+<input type="radio" id="b2">
+<label for="b2">Supervisory logic</label>
+<input type="radio" id="c2">
+<label for="c2">Supervised learning</label>
+<input type="radio" id="d2">
+<label for="d2">Unsupervised learning</label>
+<h3>3. Generally, which of the following method(s) is used for predicting continuous dependent variable?</h3>
+<ol>
+<li>Linear Regression</li>
+<li>Logistic Regression</li>
+</ol>
+<input type="radio" id="a3">
+<label for="a3">1 and 2</label>
+<input type="radio" id="b3">
+<label for="b3">only 1</label>
+<input type="radio" id="c3">
+<label for="c3">only 2</label>
+<input type="radio" id="d3">
+<label for="d3">None</label>
+<h3>4. In a simple linear regression model (One independent variable), If we change the input variable by 1 unit. How much output variable will change? </h3>
+<input type="radio" id="a4">
+<label for="a4">By 1</label>
+<input type="radio" id="b4">
+<label for="b4"> No change</label>
+<input type="radio" id="c4">
+<label for="c4">By intercept</label>
+<input type="radio" id="d4">
+<label for="d4">By slope</label>
+<h3>5. If two variables are correlated, is it necessary that they have a linear relationship?</h3>
+<input type="radio" id="a5">
+<label for="a5">yes</label>
+<input type="radio" id="b5">
+<label for="b5"> No</label>
+<br><br><br><br>
+<button id="check">Done</button>
+</body>
+<script type="text/javascript">
+	var score=0
+	document.getElementById('check').onclick= function(){
+	if(document.getElementById('a1').checked){
+	console.log("correct");
+	score++;
+}
+	if(document.getElementById('d2').checked){
+	console.log("correct");
+	score++;
+}
+	if(document.getElementById('b3').checked){
+	console.log("correct");
+	score++;
+}
+	if(document.getElementById('d4').checked){
+	console.log("correct");
+	score++;
+}
+	if(document.getElementById('b5').checked){
+	console.log("correct");
+	score++;
+}
+alert("Your score: " +score);
+		
+	}
+</script>
+</html>

@@ -1,0 +1,97 @@
+<html>
+    <head>
+		<style type="text/css">
+			body{
+				background-color: #4d0026;
+			}
+			.text{
+				color:white;
+			}
+			h3{
+				font-weight:normal;
+			}
+			#display{
+				display:none;
+			}
+			#imgs{
+				display:none;
+				float:left;
+			}
+			iframe{
+				margin:0 auto;
+				display:block;
+			}
+		</style>
+	</head>
+    <body>
+        <script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
+        <input onclick="speakText()" type="button" value="Get Started!">
+		<h1 class="text"id="hiding"></h1>
+		<h3 class="text" id="two"></h3>
+		<h3 class="text" id="three"></h3>
+		<h3 class="text" id="four"></h3>
+		<img id="display"src="thinking.jpg">
+		<h3 class="text" id="five"></h3>
+		<marquee direction="left" scrollamount="25">
+		<div id="imgs">
+		<img src="trailer.jpg" height="175">
+		<img src="cast.jpg" height="175">
+		<img src="ratings.jpeg" width="300" height="175">
+		<img src="genre.jpg" width="300" height="175">
+		</div>
+		</marquee>
+		<h3 class="text" id="six"></h3>
+		<h3 class="text" id="seven"></h3>
+		<h3 class="text" id="eight"></h3>
+		<iframe id="frame"width="0" height="0" src="https://www.youtube.com/embed/ukzFI9rgwfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<h3 class="text" id="nine"></h3>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		
+        <script>
+            function speakText(){
+                //promise=
+				var text="Hey Innovators! Lets take a quick preview of the course.";
+				responsiveVoice.speak(text);
+				document.getElementById('hiding').innerHTML=text;
+				text="Machine Learning is the science of getting computers to learn and act like humans do, and improve their learning over time in autonomous fashion, by feeding them data and information in the form of observations and real-world interactions.";
+				responsiveVoice.speak(text);
+				document.getElementById('two').innerHTML=text;
+				text="Well, Let's Understand this with an appropriate example....";
+				document.getElementById('three').innerHTML=text;
+				responsiveVoice.speak(text);
+				text="If you want to choose whether or not watch a movie, What parameters do you consider for this process??"
+				document.getElementById('four').innerHTML=text;
+				if(text=='If you want to choose whether or not watch a movie, What parameters do you consider for this process??'){
+				document.getElementById('display').style.display="block";
+				}
+				responsiveVoice.speak(text);
+				text="ummmm... we would consider few of the below,"
+				document.getElementById('five').innerHTML=text;
+				responsiveVoice.speak(text);
+				document.getElementById('imgs').style.display="block";
+				text="Trailer of the movie, Cast and Crew, Ratings, Movie genre and few other options";
+				temp=document.getElementById('five').innerHTML;
+				document.getElementById('five').innerHTML=temp+text;
+				responsiveVoice.speak(text);
+				text="So lets match this now with our definition, Well in this instance, We choose to watch a movie based on ceratain parameters like Trailer, Ratings and so on.Therefore, Here the parameters becomes the data that we provide to the computer and later train our computer i.e our model to understand this data, and later predict the result if a similar data is given in future."
+				document.getElementById('six').innerHTML=text;
+				responsiveVoice.speak(text);
+				text="So basically, we develop a model by providing the previous data and by learning from this previous data make it predict the future results."
+				document.getElementById('seven').innerHTML=text;
+				responsiveVoice.speak(text);
+				text="Let's take a deeper look, by understanding the defintion by watching a relevant video...."
+				document.getElementById('eight').innerHTML=text;
+				responsiveVoice.speak(text);
+				document.getElementById("frame").setAttribute("width","800");
+				document.getElementById("frame").setAttribute("height","400")
+				//"<iframe width="560" height="315" src="https://www.youtube.com/embed/ukzFI9rgwfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
+				text="Hope you enjoyed learning and understood the concept, Incase of any queries please feel free to reach out to us at memoryshades10@gmail.com."
+				document.getElementById('nine').innerHTML=text;
+				responsiveVoice.speak(text);
+			}
+			
+				
+        </script>
+		
+    </body>
+</html>

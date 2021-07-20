@@ -1,0 +1,46 @@
+<html>
+<head>
+<style type="text/css">
+body{
+	background-color:#4d0026;
+	color:white;
+	
+}
+h3{
+	font-weight:normal;
+}
+#frame{
+	padding-left:400px;
+}
+#img{
+	padding-left:250px;
+}
+</style>
+</head>
+<body>
+<button id="start">Get started!</button>
+<h1 align="center">Linear Regression</h1>
+<h3>Linear regression is used for finding linear relationship between target and one or more predictors. There are two types of linear regression- Simple and Multiple.</h3>
+<h3>Simple linear regression is useful for finding relationship between two continuous variables. One is predictor or independent variable and other is response or dependent variable. It looks for statistical relationship but not deterministic relationship. Relationship between two variables is said to be deterministic if one variable can be accurately expressed by the other. For example, using temperature in degree Celsius it is possible to accurately predict Fahrenheit. Statistical relationship is not accurate in determining relationship between two variables. For example, relationship between height and weight.</h3>
+<h3>The core idea is to obtain a line that best fits the data. The best fit line is the one for which total prediction error (all data points) are as small as possible. Error is the distance between the point to the regression line.</h3>
+<h3>for example when you calculate the age of a child based on her height, you are assuming the older she is, the taller she will be.</h3>
+<img id="img"src="http://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1526911465/1_afqiyx.png" height="500"align="center">
+<h3>In this particular example, you can calculate the height of a child if you know her age:</h3>
+<h3>Height=a+Age*b</h3>
+<h3>In this case, “a” and “b” are called the intercept and the slope respectively. With the same example, “a” or the intercept, is the value from where you start measuring. Newborn babies with zero months are not zero centimeters necessarily; this is the function of the intercept. The slope measures the change of height with respect to the age in months. In general, for every month older the child is, his or her height will increase with “b”.</h3>
+<h3>Now Let's look into a video and understand this better....</h3>
+<iframe id="frame"width="560" height="315" src="https://www.youtube.com/embed/E5RjzSK0fvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
+<script type="text/javascript">
+	document.getElementById("start").onclick = function(){
+	responsiveVoice.speak("Linear regression is used for finding linear relationship between target and one or more predictors. There are two types of linear regression- Simple and Multiple.");
+	responsiveVoice.speak("Simple linear regression is useful for finding relationship between two continuous variables. One is predictor or independent variable and other is response or dependent variable. It looks for statistical relationship but not deterministic relationship. Relationship between two variables is said to be deterministic if one variable can be accurately expressed by the other. For example, using temperature in degree Celsius it is possible to accurately predict Fahrenheit. Statistical relationship is not accurate in determining relationship between two variables. For example, relationship between height and weight.");
+	responsiveVoice.speak("The core idea is to obtain a line that best fits the data. The best fit line is the one for which total prediction error (all data points) are as small as possible. Error is the distance between the point to the regression line.");
+	responsiveVoice.speak("for example when you calculate the age of a child based on her height, you are assuming the older she is, the taller she will be.");
+	responsiveVoice.speak("In this particular example, you can calculate the height of a child if you know her age:");
+	responsiveVoice.speak("In this case, “a” and “b” are called the intercept and the slope respectively. With the same example, “a” or the intercept, is the value from where you start measuring. Newborn babies with zero months are not zero centimeters necessarily; this is the function of the intercept. The slope measures the change of height with respect to the age in months. In general, for every month older the child is, his or her height will increase with “b”.");
+	responsiveVoice.speak("Now Let's look into a video and understand this better");
+}
+</script>
+</body>
+</html>

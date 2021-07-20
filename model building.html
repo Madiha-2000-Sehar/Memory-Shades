@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<style type="text/css">
+			body{
+				background-color:#4d0026;
+				color:white;
+			}
+			h3{
+				font-weight:normal;
+			}
+			#frame{
+				padding-left:400px;
+			}
+		</style>
+	</head>
+	<body>
+	<script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
+	<button id="start">Get Started!</button>
+	<h1 align="center">Model building</h1>
+	<h3>Now, Let's build a model that predicts the house value in $'s based on certain parameters like No of rooms, Crime ratio and so on</h3>
+	<h3>To do this we will have the data set already available online, so we will download it and use this data set for building the model</h3>
+	<h3>To begin with we must firstly, import all the necessary packages</h3>
+	<img src="import.jpg">
+	<h3>After the importing, we will load the data set using pandas</h3>
+	<img src="load.jpg">
+	<h3>Now lets see the first five rows of the dataset</h3>
+	<img src="dataset.jpg">
+	<h3>let's view our data and grab few insights for the same</h3>
+	<img src="eda.jpg">
+	<h3>let's see the output of the above code snippet</h3>
+	<img src="heatmap.jpg">
+	<h3>Now, from the heatmap we understand that the rm is highly correlated with medv which is the target variable</h3>
+	<h3>so therefore our dependent varibale will be Lstat and target is medv</h3>
+	<h3>Instatiate the Linear regression class and train the model</h3>
+	<img src="training.jpg">
+	<img src="reg.jpg" height="300"align="right">
+	<h3>Predicting the output</h3>
+	<img src="predict.jpg">
+	<h3>Now let's watch a video for the same</h3>
+	<iframe id="frame"width="560" height="315" src="https://www.youtube.com/embed/gOXoFDrseis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<script type="text/javascript">
+		document.getElementById("start").onclick = function(){
+			responsiveVoice.speak("Now, Let's build a model that predicts the house value in $'s based on certain parameters like No of rooms, Crime ratio and so on");
+			responsiveVoice.speak("to do this we will have the data set already available online, so we will download it and use this data set for building the model");
+			responsiveVoice.speak("to begin with we must firstly, import all the necessary packages");
+			responsiveVoice.speak("After the importing, we will load the data set using pandas");
+			responsiveVoice.speak("Now lets see the first five rows of the dataset");
+			responsiveVoice.speak("let's view our data and grab few insights for the same");
+			responsiveVoice.speak("let's see the output of the above code snippet");
+			responsiveVoice.speak("Now, from the heatmap we understand that the rm is highly correlated with medv which is the target variable");
+			responsiveVoice.speak("so therefore our dependent varibale will be rm and target is medv");
+			responsiveVoice.speak("instatiate the Linear regression class and train the model");
+			responsiveVoice.speak("Predicting the output");
+			responsiveVoice.speak("Now lets watch a video for the same");
+		}
+	</script>
+	</body>
+	</html>
